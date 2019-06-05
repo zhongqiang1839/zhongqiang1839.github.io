@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>国泰</title>
+    <link rel="stylesheet" href="./assets/css/common/common.css">
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="stylesheet" href="./libs/element-ui.css">
+    <script src="./libs/vue.js"></script>
+    <script src="./libs/element-ui.js"></script>
+
+</head>
+
+<body>
+    <div id="app">
+        <!-- head -->
+        <head-component></head-component>
+
+        <div class="banner">
+            <el-carousel arrow="always" :autoplay="false" height="402px">
+                <el-carousel-item v-for="item in banner" :keys="item">
+                    <img :src="item">
+                </el-carousel-item>
+            </el-carousel>
+        </div>
+
+        <!-- content -->
+        <div class="main">
+            <div class="gt-ad"></div>
+
+            <!-- 综合意外险 -->
+            <div class="gt-main__item">
+                <div class="gt-title">
+                    <p class="gt-pro-icon gt-tit1 gt-icon--bg1">综合意外险</p>
+                    <p class="gt-pro-icon gt-tit2 gt-icon--bg2">投资理财险</p>
+                </div>
+                <div class="gt-about">
+                    <div class="gt-pro1">
+                        <div class="gt-pro-padd">
+                            <p class="gt-pro1-tit">意外宝综合意外保障计划(基本型)</p>
+                            <p class="gt-pro1-cont">最简单、最实在的综合意外保障计划，用最低的保费获得意外身故与意外伤残保障，让您轻松抵御各种意外风险。</p>
+                            <div class="gt-pro1-price">
+                                <p>¥</p>
+                                <p class="big">11</p>
+                                <p>起</p>
+                                <i>市场价￥25起</i>
+                            </div>
+                        </div>
+                        <p class="gt-index-bg gt-bg1"></p>
+                    </div>
+                    <div class="gt-pro2">
+                        <div class="gt-pro-padd">
+                            <p class="gt-pro1-tit">财富经典C款终身寿险</p>
+                            <p class="gt-pro1-cont">国泰货币型投资账户、国泰平衡型投资账户、国泰增长型投资账户。</p>
+                            <div class="gt-pro1-price">
+                                <p>¥</p>
+                                <p class="big">1000</p>
+                                <p>/份</p>
+                            </div>
+                        </div>
+                        <p class="gt-index-bg gt-bg2"></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 旅行平安险 -->
+            <div class="gt-main__item">
+                <div class="gt-title">
+                    <p class="gt-pro-icon gt-tit1 gt-icon--bg3">旅行平安险</p>
+                </div>
+                <div class="gt-about">
+                    <div class="gt-pro1">
+                        <div class="gt-pro-padd">
+                            <p class="gt-pro1-tit">旅行宝旅行保证计划(境内游)</p>
+                            <p class="gt-pro1-cont">专为境内旅游客户精心设计！提供意外、医疗及境内紧急救援保障，您还可根据自身需要自由选择保障项目和保险期间，完全满足您旅游的需要！</p>
+                            <div class="gt-pro1-price">
+                                <p>¥</p>
+                                <p class="big">11</p>
+                                <p>起</p>
+                                <i>市场价￥25起</i>
+                        </div>
+                        </div>
+                        <p class="gt-index-bg gt-bg3"></p>
+                    </div>
+                    <div class="gt-pro2">
+                        <div class="gt-pro-padd">
+                            <p class="gt-pro1-tit">旅行宝旅行保证计划(境外游)</p>
+                            <p class="gt-pro1-cont">专为境外旅游、出差、探亲学习培训、商务谈判等客户倾心打造...</p>
+                            <div class="gt-pro1-price">
+                                <p>¥</p>
+                                <p class="big">1000</p>
+                                <p>/份</p>
+                            </div>
+                        </div>
+                        <p class="gt-index-bg gt-bg4"></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gt-main__item">
+                <div class="gt-title">
+                    <p class="gt-pro-icon gt-tit1 gt-icon--bg4">交互意外险</p>
+                </div>
+                <div class="gt-about">
+                    <div class="gt-pro1 gt-pro3">
+                        <div class="gt-pro-padd gt-pro-re" style="border-right: 1px solid #ccc;">
+                            <p class="gt-pro1-tit">航天宝意外保障计划(商务型)</p>
+                            <p class="gt-pro1-cont">最简单、最实在的综合意外保障计划，用最低的保费获得意外身故与意外伤残保障，让您轻松抵御各种意外风险。</p>
+                            <div class="gt-pro1-price">
+                                <p>¥</p>
+                                <p class="big">11</p>
+                                <p>起</p>
+                                <i>市场价￥25起</i>
+                            </div>
+                            <p class="gt-index-bg gt-bg5"></p>
+                        </div>
+                        <div class="gt-pro-padd gt-pro-re">
+                            <p class="gt-pro1-tit">私车意外保障计划</p>
+                            <p class="gt-pro1-cont">无论你是驾驶还是乘坐，也无论是谁的私家车，你都将获得相应的保障... 总有它的时刻保护...</p>
+                            <div class="gt-pro1-price">
+                                <p>¥</p>
+                                <p class="big">11</p>
+                                <p>起</p>
+                                <i>市场价￥25起</i>
+                            </div>
+                            <p class="gt-index-bg gt-bg6"></p>
+                        </div>
+                    </div>
+                    <div class="gt-pro2">
+                        <div class="gt-pro-padd">
+                            <p class="gt-pro1-tit">海陆空意外保障计划</p>
+                            <p class="gt-pro1-cont">无论您是乘坐交通工具在天上飞，海上游，陆地跑，更或是经常驾驶、乘坐私家车总有它的时刻保护...</p>
+                            <div class="gt-pro1-price">
+                                <p>¥</p>
+                                <p class="big">1000</p>
+                                <p>/份</p>
+                            </div>
+                        </div>
+                        <p class="gt-index-bg gt-bg7"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- QQ -->
+        <a href="#" class="gt-qq"></a>
+
+        <!-- foot -->
+        <foot-component></foot-component>
+    </div>
+</body>
+<script type="module">
+    import herader from './components/header.js'
+    import foot from './components/footer.js'
+    new Vue({ 
+        el: '#app', 
+        components: {
+            'head-component': {
+                template: herader()
+            },
+            'foot-component': {
+                template: foot()
+            }
+        },
+        data() { 
+            return { 
+                banner: [
+                    './assets/images/banner-1.jpg', 
+                    './assets/images/banner-1.jpg', 
+                    './assets/images/banner-1.jpg'
+                ] 
+            } 
+        } 
+    })
+</script>
+
+</html>

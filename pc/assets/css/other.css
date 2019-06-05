@@ -1,0 +1,57 @@
+/* other */
+.contact {
+    width: 100%;
+}
+
+.contact h4 {
+    color: #00994b;
+    font-size: 16px;
+    margin: 15px 0;
+}
+
+.contact p {
+    color: #999;
+    font-size: 14px;
+}
+
+.f-link {
+    padding-top: 70px;
+    padding-bottom: 160px;
+}
+
+.em-entry {
+    font-size: 16px;
+}
+
+.em-entry a {
+    display: block;
+    text-decoration: underline;
+    color: #00994b;
+    margin-bottom: 20px;
+}
+
+.website-map {
+    font-size: 14px;
+}
+
+.website-map li {
+    margin-bottom: 20px;
+}
+
+.website-map h4 {
+    font-size: 18px;
+    color: #00994b;
+    line-height: 30px;
+}
+
+.website-map a {
+    margin-right: 12px;
+}
+
+.feedback {
+    padding: 30px 60px;
+}
+.feedback-txt {
+    color: red;
+    margin-bottom: 20px;
+}

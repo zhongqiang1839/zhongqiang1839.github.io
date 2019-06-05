@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>国泰</title>
+    <link rel="stylesheet" href="./assets/css/common.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./lib/mui.min.css">
+    <script src="./lib/mui.min.js"></script>
+    <script src="./lib/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+
+        <!-- home -->
+        <div class="home-lg">
+            <a href="./login.html">
+                <p class="home-lg-img"><i class="mui-icon mui-icon-contact"></i></p>
+                <p class="home-lg-txt">登录/注册</p>
+            </a>
+        </div>
+
+        <!-- ad -->
+        <div class="home-ad"><img src="./assets/images/banner-2.png" /></div>
+
+        <!-- main -->
+        <div class="home-main">
+            <h4>我的账户</h4>
+            <ul class="mui-table-view">
+                <li class="mui-table-view-cell" v-for="item in list" :keys="item">
+                    <a class="mui-navigate-right" :href="item.href">{{item.name}}</a>
+                </li>
+            </ul>
+        </div>
+        
+        <!-- nav -->
+        <p class="gt-hei"></p>
+        <nav-component></nav-component>
+    </div>
+    
+</body>
+
+<script type="module">
+    import nav from './components/nav.js'
+    new Vue({ 
+        el: '#app',
+        components: {
+            'nav-component': {
+                template: nav()
+            }
+        },
+        data(){
+            return {
+                list: [
+                    {
+                        name: '优惠券',
+                        href: './voucher.html'
+                    },
+                    {
+                        name: '我的订单',
+                        href: './order.html'
+                    },
+                    {
+                        name: '会员俱乐部',
+                        href: './vip-club.html'
+                    },
+                    {
+                        name: '我的留言',
+                        href: './message.html'
+                    },
+                    {
+                        name: '帮助中心',
+                        href: './help.html'
+                    },
+                    {
+                        name: '我的评价',
+                        href: './my-evaluation.html'
+                    },
+                    {
+                        name: '历史记录',
+                        href: './history.html'
+                    },
+                    {
+                        name: '关于国泰',
+                        href: './about.html'
+                    }
+                ]
+            }
+        }
+    })
+</script>
+</html>

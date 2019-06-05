@@ -1,0 +1,95 @@
+/* mall */
+.enterprise {
+    display: flex;
+}
+
+.enterprise img {
+    width: 120px;
+    height: 120px;
+    margin-right: 15px;
+}
+
+.enterprise-box {
+    flex: 1;
+    margin-bottom: 20px;
+}
+
+.enterprise-box h4 {
+    color: #00994b;
+    font-size: 16px;
+}
+
+.enterprise-box h4,
+.enterprise-box a,
+.enterprise-box p {
+    margin-bottom: 10px;
+}
+
+.enterprise-box a {
+    display: block;
+}
+
+.process {
+    width: 100%;
+}
+
+.process img {
+    display: block;
+    width: 100%;
+}
+
+.problem {
+    width: 100%;
+}
+
+.market {
+    margin-top: 20px;
+}
+
+.market li {
+    height: 40px;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px dashed #ccc;
+    display: flex;
+}
+
+.accident ul ,
+.investment ul {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.accident li {
+    width: 260px;
+    margin-bottom: 20px;
+}
+
+.accident li h4 {
+    font-size: 16px;
+    color: #00994b;
+}
+
+.accident li h4 ,
+.accident li p {
+    margin-bottom: 8px;
+}
+
+.accident li img {
+    width: 100%;
+    height: 200px;
+}
+
+.investment li {
+    width: 180px;
+    height: 300px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+}
+
+.investment li img {
+    width: 100%;
+    height: 100%;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>我的账户</title>
+    <link rel="stylesheet" href="../../assets/css/common/common.css">
+    <link rel="stylesheet" href="../../assets/css/user.css">
+    <link rel="stylesheet" href="../../libs/element-ui.css">
+    <script src="../../libs/vue.js"></script>
+    <script src="../../libs/element-ui.js"></script>
+</head>
+<body>
+    <div id="app">
+        <!-- head -->
+        <head-component></head-component>
+
+        <!-- main -->
+        <div class="main gt-flex mar15">
+            <!-- 子导航 -->
+            <nav-component></nav-component>
+            
+            <div class="box-right">
+
+                <div class="mar15">
+                    <el-breadcrumb separator-class="el-icon-arrow-right">
+                        <el-breadcrumb-item><a href='../../index.html'>首页</a></el-breadcrumb-item>
+                        <el-breadcrumb-item>我的账户</el-breadcrumb-item>
+                        <el-breadcrumb-item>帮助中心</el-breadcrumb-item>
+                    </el-breadcrumb>
+                </div>
+
+                <div class="mar15 gt-public-box">
+                    <p class="gt-public-title">帮助中心</p>
+                    <div class="gt-public-padd">
+                        <div class="help">
+                            <h4>国泰服务热线：</h4>
+                            <p>反保险欺诈举报电话：400-886-9899</p>
+                            <p>客服信箱：service@cathaylife.cn</p>
+                            <p>8008199899  (固定电话拨打,免费)</p>
+                            <p>4008869899  (移动电话拨打,付费)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- foot -->
+        <foot-component></foot-component>
+    </div>
+</body>
+
+<script type="module">
+    import herader from '../../components/header.js'
+    import foot from '../../components/footer.js'
+    import { user } from '../../components/sub-nav.js'
+    new Vue({ 
+        el: '#app', 
+        components: {
+            'head-component': {
+                template: herader()
+            },
+            'foot-component': {
+                template: foot()
+            },
+            'nav-component': {
+                template: user()
+            }
+        },
+        data() { 
+            return {
+
+            } 
+        } 
+    })
+</script>
+</html>

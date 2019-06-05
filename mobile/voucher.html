@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>国泰</title>
+    <link rel="stylesheet" href="./assets/css/common.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./lib/mui.min.css">
+    <script src="./lib/mui.min.js"></script>
+    <script src="./lib/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+
+        <!-- 顶部导航 -->
+        <div class="gt-topnav">
+            <a href="javascript:history.go(-1)" class="mui-icon mui-icon-back back"></a>
+            <span>优惠券</span>
+        </div>
+
+        <div class="voucher">
+            <ul class="mui-table-view">
+                <li class="mui-table-view-cell mui-media" v-for="item in 3" :keys="item">
+                    <a href="javascript:;">
+                        <img class="mui-media-object mui-pull-left" src="./assets/images/banner-1.png">
+                        <div class="mui-media-body">
+                                综合意外宝
+                            <p class='mui-ellipsis'>11000减2000</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    <script type="module">
+        new Vue({
+            el: '#app',
+            data(){
+                return {
+                    
+                }
+            }
+        })
+    </script>
+</body>
+</html>

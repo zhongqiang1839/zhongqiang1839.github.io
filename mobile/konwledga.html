@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>国泰</title>
+    <link rel="stylesheet" href="./assets/css/common.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./lib/mui.min.css">
+    <script src="./lib/mui.min.js"></script>
+    <script src="./lib/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+
+        <!-- 顶部导航 -->
+        <div class="gt-topnav">
+            <a href="javascript:history.go(-1)" class="mui-icon mui-icon-back back"></a>
+            <span>学院</span>
+        </div>
+
+        <!-- list -->
+        <div class="konwledga">
+            <ul class="mui-table-view"> 
+                <li class="mui-table-view-cell mui-collapse konwledga-li" v-for="item in konwledga" :keys="item">
+                    <a class="mui-navigate-right" href="#">{{item.name}}</a>
+                    <div class="mui-collapse-content" v-for="subitem in item.arr" :keys="subitem">
+                        <p><a href="./list.html">{{subitem}}</a></p>
+                    </div>
+                </li>
+            </ul>
+            <div class="konwledga-list">
+                <div class="mui-col-sm-6 mui-col-xs-12" v-for="item in konwledgalist" :keys="item">
+                    <li class="mui-table-view-cell konwledga-li">
+                        <a class="mui-navigate-right" href="./list.html">
+                            {{item.name}}
+                        </a>
+                    </li>
+                </div>
+            </div>
+        </div>
+
+        <!-- nomore -->
+        <div class="no-more">
+            <i></i>
+            <span>没有更多了</span>
+            <i></i>
+        </div>
+
+        
+        <!-- nav -->
+        <p class="gt-hei"></p>
+        <nav-component></nav-component>
+    </div>
+    
+</body>
+
+<script type="module">
+    import nav from './components/nav.js'
+    new Vue({ 
+        el: '#app',
+        components: {
+            'nav-component': {
+                template: nav()
+            }
+        },
+        data(){
+            return {
+                konwledgalist: [
+                    {
+                        name: '保障险',
+                        arr: []
+                    },
+                    {
+                        name: '储蓄年金险',
+                        arr: []
+                    },
+                    {
+                        name: '医疗险',
+                        arr: []
+                    },
+                    {
+                        name: '意外险',
+                        arr: []
+                    },
+                    {
+                        name: '儿童险',
+                        arr: []
+                    },
+                    {
+                        name: '万能险',
+                        arr: []
+                    },
+                    {
+                        name: '金融安全宣传',
+                        arr: []
+                    }
+                ],
+                konwledga: [
+                    {
+                        name: '保险常识',
+                        arr: ['热点资讯', '投保案例']
+                    }
+                ],
+                
+            }
+        }
+    })
+</script>
+</html>

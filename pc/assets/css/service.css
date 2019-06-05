@@ -1,0 +1,149 @@
+/* service */
+.service-insurance {
+    position: relative;
+    background: url('../images/gt-pic3.jpg') no-repeat 15px 15px;
+    width: 594px;
+    height: 329px;
+}
+
+.service-insurance a {
+    position: absolute;
+    width: 130px;
+    height: 156px;
+    background: #000;
+    opacity: 0;
+}
+
+.service-insurance .link-1 {
+    left: 19px;
+    top: 15px;
+}
+.service-insurance .link-2 {
+    left: 170px;
+    top: 15px;
+}
+.service-insurance .link-3 {
+    left: 322px;
+    top: 15px;
+}
+.service-insurance .link-4 {
+    left: 473px;
+    top: 15px;
+}
+.service-insurance .link-5 {
+    left: 19px;
+    top: 194px;
+}
+.service-insurance .link-6 {
+    left: 170px;
+    top: 194px;
+}
+.service-insurance .link-7 {
+    left: 322px;
+    top: 194px;
+}
+.service-insurance .link-8 {
+    left: 473px;
+    top: 194px;
+}
+
+.service-hotline {
+    font-size: 14px;
+}
+
+.service-hotline h4 {
+    color: #00994b;
+}
+
+.service-hotline p {
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+.service-dot li {
+    border-bottom: 1px dashed #ccc;
+    padding: 20px 0;
+}
+
+.vip-club {
+    width: 100%;
+}
+
+.enterprise-height {
+    height: 300px;
+}
+
+.enterprise-p {
+    margin-top: 20px;
+}
+
+.card-activation ,
+.policy-down {
+    width: 450px;
+}
+
+.assessment {
+    width: 100%;
+}
+
+.assessment h4 {
+    color: #00994b;
+    font-size: 16px;
+}
+
+.assessment p ,
+.policy-down p {
+    line-height: 30px;
+}
+
+.policy-down p  {
+    margin-bottom: 20px;
+}
+
+.servicer-cross {
+    width: 100%;
+}
+
+.servicer-cross h1 {
+    text-align: center;
+    color: #00994b;
+}
+
+.servicer-cross p {
+    margin-top: 15px;
+    line-height: 24px;
+    text-indent: 2em;
+}
+
+.self-service {
+    width: 100%;
+}
+
+.self-service ul { 
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.self-service li {
+    width: 260px;
+    margin-bottom: 20px;
+}
+
+.self-service li h4 {
+    color: #000;
+    font-size: 16px;
+    border-left: 4px solid #00994b;
+    padding-left: 15px;
+    margin-bottom: 15px;
+}
+
+.self-service li p {
+    color: #666;
+    margin-bottom: 10px;
+    line-height: 22px;
+}
+
+.self-service li a {
+    color: #00994b;
+}

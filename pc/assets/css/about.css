@@ -1,0 +1,52 @@
+/* about */
+.about {
+    line-height: 22px;
+}
+
+.about h4 {
+    color: #000;
+}
+
+.about p {
+    margin-bottom: 20px;
+}
+
+.culture {
+    width: 100%;
+}
+.honor {
+    text-align: center;
+}
+.honor img ,
+.honor p {
+    margin-bottom: 15px;
+}
+
+.break-news {
+    width: 100%;
+}
+
+.break-news li {
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.break-news-pagecoade {
+    margin-top: 15px;
+    text-align: right;
+}
+
+.detail-breadcrumb {
+    display: flex;
+}
+
+.detail {
+    text-align: center;
+}
+
+.detail h4 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #000;
+}

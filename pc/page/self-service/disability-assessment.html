@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>客服服务-伤残评定标准</title>
+    <link rel="stylesheet" href="../../assets/css/common/common.css">
+    <link rel="stylesheet" href="../../assets/css/service.css">
+    <link rel="stylesheet" href="../../libs/element-ui.css">
+    <script src="../../libs/vue.js"></script>
+    <script src="../../libs/element-ui.js"></script>
+</head>
+<body>
+    <div id="app">
+        <!-- head -->
+        <head-component></head-component>
+
+        <!-- main -->
+        <div class="main gt-flex mar15">
+            <!-- 子导航 -->
+            <nav-component></nav-component>
+            
+            <div class="box-right">
+
+                <div class="banner2">
+                    <el-carousel arrow="always" :autoplay="false" height="320px">
+                        <el-carousel-item v-for="item in banner" :keys="item">
+                            <image :src="item"></image>
+                        </el-carousel-item>
+                    </el-carousel>
+                </div>
+
+                <div class="mar15">
+                    <el-breadcrumb separator-class="el-icon-arrow-right">
+                        <el-breadcrumb-item><a href='../../index.html'>首页</a></el-breadcrumb-item>
+                        <el-breadcrumb-item>自助服务</el-breadcrumb-item>
+                        <el-breadcrumb-item>伤残评定标准</el-breadcrumb-item>
+                    </el-breadcrumb>
+                </div>
+                
+                <div class="mar15 gt-public-box">
+                    <p class="gt-public-title">伤残评定标准</p>
+                    <div class="gt-public-padd">
+                        <div class="assessment">
+                            <h4>评定标准</h4>
+                            <p>1.《人体轻微伤的鉴定标准》（1996年7月25日公安部发布，1997年1月1日实施）；</p>
+                            <p>2.《人体轻伤鉴定标准（试行）》（1990年6月20日最高法、最高检 公安部 司法部发布，1990年7月1日起实施）；</p>
+                            <p>3.《人体重伤鉴定标准》（1990年3月29日司法部 最高法、最高检 公安部发布，1990年7月1日实施）；</p>
+                            <p>4.《道路交通事故受伤人员伤残评定》（公安部发布，2002年12月1日实施）；</p>
+                            <p>5.《医疗事故分级标准（试行）》（2002年7月31日卫生部发布，2002年9月1日实施）；</p>
+                            <p>6.《事故伤害损失工作日标准》（国家标准 GB/T 15499－1995）</p>
+                            <p>7.《职工工伤与职业病致残程度鉴定》（GB/T 16180-2006国家技术监督局2006年5月1日实施）；</p>
+                            <p>8.《职工非因工伤残或因病丧失劳动能力程度鉴定标准》（2002年4月5日劳动和社会保障部发布，同日实施）；</p>
+                            <p>9.《人体损伤程度鉴定标准》（司法部发布，2014年1月1日实施）；</p>                                
+                            <p>10.《人体损伤残疾程度鉴定标准（试行）》（最高人民法院制定，自2005年1月1日起实施该鉴定标准）；</p>                                
+                            <p>11.《军人残疾等级评定标准（试行）》（民政部劳动和社会保障部 卫生部解放军总后勤部发布）；</p>                                
+                            <p>12.《残疾人实用评定标准（试用）》（中国残疾人联合会发布）。</p>                                
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- foot -->
+        <foot-component></foot-component>
+    </div>
+</body>
+
+<script type="module">
+    import herader from '../../components/header.js'
+    import foot from '../../components/footer.js'
+    import { selfServiceNav } from '../../components/sub-nav.js'
+    new Vue({ 
+        el: '#app', 
+        components: {
+            'head-component': {
+                template: herader()
+            },
+            'foot-component': {
+                template: foot()
+            },
+            'nav-component': {
+                template: selfServiceNav()
+            }
+        },
+        data() { 
+            return {
+                banner: [
+                    '../../assets/images/2019shaoerji_banner.jpg', 
+                    '../../assets/images/2019shaoerji_banner.jpg', 
+                    '../../assets/images/2019shaoerji_banner.jpg'
+                ],
+                form: {
+                    name: '',
+                    password: '',
+                }
+            } 
+        } 
+    })
+</script>
+</html>

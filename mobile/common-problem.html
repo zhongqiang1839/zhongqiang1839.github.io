@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>国泰</title>
+    <link rel="stylesheet" href="./assets/css/common.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./lib/mui.min.css">
+    <script src="./lib/mui.min.js"></script>
+    <script src="./lib/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+
+        <!-- 顶部导航 -->
+        <div class="gt-topnav">
+            <a href="javascript:history.go(-1)" class="mui-icon mui-icon-back back"></a>
+            <span>常见问题</span>
+        </div>
+
+        <div class="problem">
+            <ul class="mui-table-view"> 
+                <li class="mui-table-view-cell mui-collapse" v-for="item in list" :keys="item">
+                    <a class="mui-navigate-right" href="#">{{item.name}}</a>
+                    <div class="mui-collapse-content">
+                        <p>{{item.content}}</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+</body>
+<script>
+    new Vue({
+        el: '#app',
+        data(){
+            return {
+                list: [
+                    {
+                        name: 'Q:你们公司的网上投保有什么特色？',
+                        content: 'A:我司网上保险产品具有价格低（比市场价优惠更多，意外险1元起）、理赔快（小额案件，资料齐全即刻赔付）、产品贴心（选择自由，功能全面）的三大特色。'
+                    },
+                    {
+                        name: 'Q:如何获得保单？',
+                        content: 'A:网上投保成功后您可以登录会员账户，点击“我的保单”查看或打印电子保单；电子保单具有和纸质保单一样的法律效力；综合意外、交通意外和旅行平安三类短期意外险暂不能提供纸质保单，如需使用请自行打印电子保单。'
+                    },
+                    {
+                        name: 'Q:你们公司的网上投保有什么特色？',
+                        content: 'A:我司网上保险产品具有价格低（比市场价优惠更多，意外险1元起）、理赔快（小额案件，资料齐全即刻赔付）、产品贴心（选择自由，功能全面）的三大特色。'
+                    },
+                    {
+                        name: 'Q:如何获得保单？',
+                        content: 'A:网上投保成功后您可以登录会员账户，点击“我的保单”查看或打印电子保单；电子保单具有和纸质保单一样的法律效力；综合意外、交通意外和旅行平安三类短期意外险暂不能提供纸质保单，如需使用请自行打印电子保单。'
+                    },
+                    {
+                        name: 'Q:你们公司的网上投保有什么特色？',
+                        content: 'A:我司网上保险产品具有价格低（比市场价优惠更多，意外险1元起）、理赔快（小额案件，资料齐全即刻赔付）、产品贴心（选择自由，功能全面）的三大特色。'
+                    },
+                    {
+                        name: 'Q:如何获得保单？',
+                        content: 'A:网上投保成功后您可以登录会员账户，点击“我的保单”查看或打印电子保单；电子保单具有和纸质保单一样的法律效力；综合意外、交通意外和旅行平安三类短期意外险暂不能提供纸质保单，如需使用请自行打印电子保单。'
+                    }
+                ]
+            }
+        }
+    })
+</script>
+</html>
